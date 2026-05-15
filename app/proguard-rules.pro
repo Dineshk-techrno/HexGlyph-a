@@ -1,0 +1,2 @@
+-dontwarn kotlinx.coroutines.**
+-keep class dagger.hilt.** { *; }
