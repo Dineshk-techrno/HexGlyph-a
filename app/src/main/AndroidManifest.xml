@@ -2,35 +2,43 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Camera -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <!-- Android 13+ image access -->
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Android 12 and lower -->
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
 
-    <uses-permission
-        android:name="android.permission.READ_MEDIA_IMAGES" />
-
     <application
-    android:name=".HexGlyphApp"
-    android:allowBackup="true"
-    android:hardwareAccelerated="true"
-    android:label="HexGlyph"
-    android:supportsRtl="true"
-    android:theme="@style/Theme.HexGlyph">
+        android:name=".HexGlyphApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="HexGlyph"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HexGlyph">
 
-    <activity
-        android:name=".MainActivity"
-        android:exported="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
 
-        <intent-filter>
+            <intent-filter>
 
-            <action
-                android:name="android.intent.action.MAIN" />
+                <action
+                    android:name="android.intent.action.MAIN" />
 
-            <category
-                android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
 
-        </intent-filter>
+            </intent-filter>
 
-    </activity>
+        </activity>
 
-</application>
+    </application>
+
+</manifest>
