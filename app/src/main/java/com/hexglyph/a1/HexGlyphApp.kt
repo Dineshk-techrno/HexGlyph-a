@@ -1,4 +1,3 @@
-
 package com.hexglyph.a1
 
 import android.app.Application
